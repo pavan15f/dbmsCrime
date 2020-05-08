@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+
+<center>
+<table border="10">
+    <!-- {% for i in keys %}
+    <tr>
+        <th>
+            {{i}}
+        </th>
+    </tr>
+    {% endfor %}  -->
+    {% for keys,value in result.items() %}
+    <tr>
+        <th>
+            {{keys}}
+        </th>
+        <td>
+            {{value}}
+        </td>
+    </tr>
+    {% endfor %}
+   
+</table>
+<h3>The Above Data Was Successfully Submitted </h3>
+<h4><a href="add">ADD ANOTHER COMPLAINT</a></h4>
+</center>
+
+
+
+
+{% endblock %}

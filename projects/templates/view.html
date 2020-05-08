@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<center>
+<table border="1">
+  <tr>
+    <th>  Crime- Id  </th>
+    <th>  Location  </th>
+    <th>  Police Station  </th>
+    <th>  Date  </th>
+    <th>  Criminal Name  </th>
+    <th>  Criminal Aadhar Number  </th>
+    <th>  Victim Name  </th>
+    <th>  Victim Aadhar Number  </th>
+    <th>  Crime type  </th>
+
+  </tr>
+{% for i in res %}
+<tr>
+{%  for j in i %} 
+  
+    <td>
+      {{j}}
+    </td>
+      
+  
+{% endfor %}
+</tr>
+{% endfor %}
+</table>
+</center>
+{% endblock %}
