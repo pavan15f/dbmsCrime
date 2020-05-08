@@ -1,0 +1,82 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+    <h1>ADD A COMPLAINT</h1>
+    
+    <form action="" method="POST">
+       <!-- crime.id:<br>
+        <input type="text" name="crimeid" value=""><br><br>
+        Location:<br>
+        <input type="text" name="location" value=""><br><br>
+        Police station:<br>
+        <input type="text" name="policestn" value=""><br><br>
+        criminal name:<br>
+        <input type="text" name="criminal" value=""><br><br>
+        criminal adhar:<br>
+        <input type="text" name="criminaladhr" value=""><br><br>
+        victim name:<br>
+        <input type="text" name="victim" value=""><br><br>
+        victim adhar:<br>
+        <input type="text" name="victimadhr" value=""><br><br>
+        crime type:
+        <input type="radio" name="crimetype" value="murder" > Murder<br>
+        <input type="radio" name="crimetype" value="abuse">Abuse<br>
+        <input type="radio" name="crimetype" value="theft"> theft<br>
+        <input type="submit"  value="Submit"> -->
+    <center>
+        <h3> {{form.crimeid.label}}
+            {{form.crimeid(size=30)}}
+            
+
+
+        </h3>
+        <h3>
+            {{form.location.label}}
+            {{form.location(size=30)}} 
+    
+        </h3>
+        <h3>
+            {{form.policestn.label}}
+            {{form.policestn(size=30)}}
+        
+        
+        </h3>
+        <h4>
+            {{form.criminalname.label}}
+            {{form.criminalname(size=30)}}
+            
+            
+        </h4>
+        <h4>
+            {{form.criminaladhr.label}}
+            
+            {{form.criminaladhr(size=30)}}
+                
+        </h4>
+        <h4>
+            {{form.victimname.label}}
+            {{form.victimname(size=30)}}
+                    
+                    
+        </h4> 
+        <h4>
+            {{form.victimadhr.label}}
+            {{form.victimadhr(size=30)}}
+                        
+                        
+        </h4>
+        <h4>
+            {{ form.crimetype.label }} 
+            {{ form.crimetype }}
+        </h4> 
+        <h4>
+            {{form.submit()}}
+        </h4>
+        
+    </center>
+        
+    </form>
+    
+
+{% endblock %}
+
